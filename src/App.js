@@ -10,17 +10,17 @@ import { NotFound } from "./pages/NotFound";
 function App() {
     return (
         <>
-            <Header />
-            <main className="container">
-                <BrowserRouter>
+            <BrowserRouter>
+                <Header />
+                <main className="container">
                     <Switch>
                         <Route exact path="/" component={Home} />
                         <Route path="/about" component={About} />
                         <Route path="/contacts" component={Contacts} />
                         <Route component={NotFound} />
                     </Switch>
-                </BrowserRouter>
-            </main>
+                </main>
+            </BrowserRouter>
             <Footer />
         </>
     );
