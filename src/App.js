@@ -12,7 +12,7 @@ import { Recipe } from "./pages/Recipe";
 function App() {
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/react-router-5">
                 <Header />
                 <main className="container">
                     <Switch>
