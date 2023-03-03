@@ -10,7 +10,7 @@ export const getAllCategories = async () => {
     return response.json();
 };
 
-export const getFilteredCategories = async (catName) => {
+export const getFilteredCategory = async (catName) => {
     const response = await fetch(API_URL + "filter.php?c=" + catName);
     return response.json();
 };
